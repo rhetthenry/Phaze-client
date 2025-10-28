@@ -1,3 +1,5 @@
+package me.alpha432.oyvey.features.modules.combat;
+
 import net.minecraft.entity.item.EntityEnderCrystal;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -5,12 +7,16 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class CrystalAuraExample {
+
+public class Autocrystal extends Module {
+    public Autocrystal() {
+        super("Crystal Aura", "Just OP", Category.COMBAT, true, false, false);
+    }
 
     private final PlayerEntity player;
     private final double range;
 
-    public CrystalAuraExample(PlayerEntity player, double range) {
+    public Autocrystal(PlayerEntity player, double range) {
         this.player = player;
         this.range = range;
     }
